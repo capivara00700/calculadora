@@ -17,9 +17,9 @@
         #box{
             position: absolute;
             top: 10%;
-            left: 35%;
+            left: 37%;
 
-            width: 350px;
+            width: 300px;
             height: 500px;
             background: gray;
             border-radius: 10px;
@@ -27,10 +27,17 @@
 
         #resultados{
             margin: 20px 0px;
-            width: 100%;
+            width: 80%;
             background: white;
             height: 40px;
             border: 2px solid black;
+        }
+
+        .btn-custom{
+            width: 60px;
+            height: 60px;
+            border-radius: 0px;
+            margin: 7px;
         }
     </style>
 </head>
@@ -41,40 +48,45 @@
 
             <!--Visor-de-resultados-->
 
-            <input type="text" disabled id="resultados"> 
+            <!--- <input type="text" disabled id="resultados"> --> 
 
 
+
+            <div class="d-flex justify-content-center">
+                <buuton class="btn btn-dark btn-custom">C</buuton>
+                <buuton class="btn btn-dark btn-custom"><</buuton>
+                <buuton class="btn btn-dark btn-custom">/</buuton>
+                <buuton class="btn btn-dark btn-custom">*</buuton>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <buuton class="btn btn-dark btn-custom">7</buuton>
+                <buuton class="btn btn-dark btn-custom">8</buuton>
+                <buuton class="btn btn-dark btn-custom">9</buuton>
+                <buuton class="btn btn-dark btn-custom">-</buuton>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <buuton class="btn btn-dark btn-custom">4</buuton>
+                <buuton class="btn btn-dark btn-custom">5</buuton>
+                <buuton class="btn btn-dark btn-custom">6</buuton>
+                <buuton class="btn btn-dark btn-custom">+</buuton>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <buuton class="btn btn-dark btn-custom">1</buuton>
+                <buuton class="btn btn-dark btn-custom">2</buuton>
+                <buuton class="btn btn-dark btn-custom">3</buuton>
+                <buuton class="btn btn-dark btn-custom" style="height: 120px">=</buuton>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <buuton class="btn btn-dark btn-custom" style="width: 120px">0</buuton>
+                <buuton class="btn btn-dark btn-custom">.</buuton>
+            </div>
             
-            <div class="row">
-                <div class="col">
-                    <buuton class="btn btn-dark">C</buuton>
-                </div>
-                <div class="col">
-                    <buuton class="btn btn-dark"><</buuton>
-                </div>
-                <div class="col">
-                    <buuton class="btn btn-dark">/</buuton>
-                </div>
-                <div class="col">
-                    <buuton class="btn btn-dark">*</buuton>
-                </div>
-            </div>
+            
 
-
-
-
-
-            <div class="row">
-                <div class="col">
-                    teste2
-                </div>
-                <div class="col">
-                    teste2
-                </div>
-                <div class="col">
-                    teste2
-                </div>
-            </div>
         </div>
     </div>
 
