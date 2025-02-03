@@ -19,25 +19,26 @@
             top: 10%;
             left: 37%;
 
+            padding: 5px;
             width: 300px;
-            height: 500px;
-            background: gray;
+            height: 450px;
+            background: black;
             border-radius: 10px;
         }
 
         #resultados{
             margin: 20px 0px;
-            width: 80%;
+            width: 100%;
             background: white;
             height: 40px;
             border: 2px solid black;
         }
 
         .btn-custom{
-            width: 60px;
-            height: 60px;
+            width: 45px;
+            height: 50px;
             border-radius: 0px;
-            margin: 7px;
+            margin: 5px;
         }
     </style>
 </head>
@@ -47,44 +48,43 @@
         <div class="container">
 
             <!--Visor-de-resultados-->
+            <input type="text" id="resultados" class="mb-5 mt-4" disabled>
+
 
             <!--- <input type="text" disabled id="resultados"> --> 
 
-
-
-            <div class="d-flex justify-content-center">
-                <buuton class="btn btn-dark btn-custom">C</buuton>
-                <buuton class="btn btn-dark btn-custom"><</buuton>
-                <buuton class="btn btn-dark btn-custom">/</buuton>
-                <buuton class="btn btn-dark btn-custom">*</buuton>
+            <div class="row">
+                <buuton class="col btn btn-dark btn-custom">C</buuton>
+                <buuton class="col btn btn-dark btn-custom"><</buuton>
+                <buuton class="col btn btn-dark btn-custom">/</buuton>
+                <buuton class="col btn btn-dark btn-custom">*</buuton>
             </div>
 
-            <div class="d-flex justify-content-center">
-                <buuton class="btn btn-dark btn-custom">7</buuton>
-                <buuton class="btn btn-dark btn-custom">8</buuton>
-                <buuton class="btn btn-dark btn-custom">9</buuton>
-                <buuton class="btn btn-dark btn-custom">-</buuton>
+            <div class="row">
+                <buuton class="col btn btn-dark btn-custom">7</buuton>
+                <buuton class="col btn btn-dark btn-custom">8</buuton>
+                <buuton class="col btn btn-dark btn-custom">9</buuton>
+                <buuton class="col btn btn-dark btn-custom">+</buuton>
             </div>
 
-            <div class="d-flex justify-content-center">
-                <buuton class="btn btn-dark btn-custom">4</buuton>
-                <buuton class="btn btn-dark btn-custom">5</buuton>
-                <buuton class="btn btn-dark btn-custom">6</buuton>
-                <buuton class="btn btn-dark btn-custom">+</buuton>
-            </div>
-
-            <div class="d-flex justify-content-center">
-                <buuton class="btn btn-dark btn-custom">1</buuton>
-                <buuton class="btn btn-dark btn-custom">2</buuton>
-                <buuton class="btn btn-dark btn-custom">3</buuton>
-                <buuton class="btn btn-dark btn-custom" style="height: 120px">=</buuton>
-            </div>
-
-            <div class="d-flex justify-content-center">
-                <buuton class="btn btn-dark btn-custom" style="width: 120px">0</buuton>
-                <buuton class="btn btn-dark btn-custom">.</buuton>
+            <div class="row">
+                <buuton class="col btn btn-dark btn-custom">4</buuton>
+                <buuton class="col btn btn-dark btn-custom">5</buuton>
+                <buuton class="col btn btn-dark btn-custom">6</buuton>
+                <buuton class="col btn btn-dark btn-custom">-</buuton>
             </div>
             
+            <div class="row">
+                <buuton class="col btn btn-dark btn-custom">1</buuton>
+                <buuton class="col btn btn-dark btn-custom">2</buuton>
+                <buuton class="col btn btn-dark btn-custom">3</buuton>
+                <buuton class="col btn btn-dark btn-custom" style="height: 110px;">=</buuton>
+            </div>
+            
+            <div class="row" style="margin-top: -60px;">
+                <buuton class="col-6 btn btn-dark btn-custom">0</buuton>
+                <buuton class="col-2 btn btn-dark btn-custom">.</buuton>
+            </div>
             
 
         </div>
