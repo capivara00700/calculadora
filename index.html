@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
     <style>
         body{
@@ -50,40 +50,39 @@
             <!--Visor-de-resultados-->
             <input type="text" id="resultados" class="mb-5 mt-4" disabled>
 
-
             <!--- <input type="text" disabled id="resultados"> --> 
 
             <div class="row">
-                <buuton class="col btn btn-dark btn-custom">C</buuton>
-                <buuton class="col btn btn-dark btn-custom"><</buuton>
-                <buuton class="col btn btn-dark btn-custom">/</buuton>
-                <buuton class="col btn btn-dark btn-custom">*</buuton>
+                <buuton onclick="calcular('-')" class="col btn btn-dark btn-custom">C</buuton>
+                <buuton onclick="calcular('-')" class="col btn btn-dark btn-custom"><</buuton>
+                <buuton onclick="calcular('-')" class="col btn btn-dark btn-custom">/</buuton>
+                <buuton onclick="calcular('-')" class="col btn btn-dark btn-custom">*</buuton>
             </div>
 
             <div class="row">
-                <buuton class="col btn btn-dark btn-custom">7</buuton>
-                <buuton class="col btn btn-dark btn-custom">8</buuton>
-                <buuton class="col btn btn-dark btn-custom">9</buuton>
-                <buuton class="col btn btn-dark btn-custom">+</buuton>
+                <buuton onclick="calcular(7)" class="col btn btn-dark btn-custom">7</buuton>
+                <buuton onclick="calcular(8)" class="col btn btn-dark btn-custom">8</buuton>
+                <buuton onclick="calcular(9)" class="col btn btn-dark btn-custom">9</buuton>
+                <buuton onclick="calcular('+')" class="col btn btn-dark btn-custom">+</buuton>
             </div>
 
             <div class="row">
-                <buuton class="col btn btn-dark btn-custom">4</buuton>
-                <buuton class="col btn btn-dark btn-custom">5</buuton>
-                <buuton class="col btn btn-dark btn-custom">6</buuton>
-                <buuton class="col btn btn-dark btn-custom">-</buuton>
+                <buuton onclick="calcular(4)" class="col btn btn-dark btn-custom">4</buuton>
+                <buuton onclick="calcular(5)" class="col btn btn-dark btn-custom">5</buuton>
+                <buuton onclick="calcular(6)" class="col btn btn-dark btn-custom">6</buuton>
+                <buuton onclick="calcular('-')" class="col btn btn-dark btn-custom">-</buuton>
             </div>
             
             <div class="row">
-                <buuton class="col btn btn-dark btn-custom">1</buuton>
-                <buuton class="col btn btn-dark btn-custom">2</buuton>
-                <buuton class="col btn btn-dark btn-custom">3</buuton>
-                <buuton class="col btn btn-dark btn-custom" style="height: 110px;">=</buuton>
+                <buuton onclick="calcular(1)" class="col btn btn-dark btn-custom">1</buuton>
+                <buuton onclick="calcular(2)" class="col btn btn-dark btn-custom">2</buuton>
+                <buuton onclick="calcular(3)" class="col btn btn-dark btn-custom">3</buuton>
+                <buuton onclick="calcular('=')" class="col btn btn-dark btn-custom" style="height: 110px;">=</buuton>
             </div>
             
             <div class="row" style="margin-top: -60px;">
-                <buuton class="col-6 btn btn-dark btn-custom">0</buuton>
-                <buuton class="col-2 btn btn-dark btn-custom">.</buuton>
+                <buuton onclick="calcular(0)" class="col-6 btn btn-dark btn-custom">0</buuton>
+                <buuton onclick="calcular('.')" class="col-2 btn btn-dark btn-custom">.</buuton>
             </div>
             
 
