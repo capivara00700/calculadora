@@ -1,12 +1,6 @@
-function calcular(tipo){
+function numero(num){
 
-    if(!isNaN(tipo)){
-        console.log('numero')
-        console.log(tipo)
-    } else {
-        console.log('sinal')
-        console.log(tipo)
-
-    }
-
+    let numero = document.getElementById('resultados').value
+    document.getElementById('resultados').value = numero + num
+    
 }
