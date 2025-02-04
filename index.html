@@ -15,11 +15,9 @@
         }
 
         #box{
-            position: absolute;
-            top: 10%;
-            left: 37%;
 
-            padding: 5px;
+            margin-left: 50%;
+
             width: 300px;
             height: 450px;
             background: black;
@@ -35,10 +33,14 @@
         }
 
         .btn-custom{
-            width: 45px;
-            height: 50px;
+            height: 100%;
+            width: 100%;
             border-radius: 0px;
-            margin: 5px;
+        }
+        th{
+            padding: 3px;
+            height: 65px;
+            width: 65px;
         }
     </style>
 </head>
@@ -48,42 +50,44 @@
         <div class="container">
 
             <!--Visor-de-resultados-->
-            <input type="text" id="resultados" class="mb-5 mt-4" disabled>
+            <input type="text" id="resultados" disabled>
 
             <!--- <input type="text" disabled id="resultados"> --> 
 
-            <div class="row">
-                <buuton onclick="clean()" class="col btn btn-dark btn-custom">C</buuton>
-                <buuton onclick="voltar()" class="col btn btn-dark btn-custom"><</buuton>
-                <buuton onclick="numero('/')" class="col btn btn-dark btn-custom">/</buuton>
-                <buuton onclick="numero('*')" class="col btn btn-dark btn-custom">*</buuton>
-            </div>
+            <table class="d-flex justify-content-center">
+                <tr>
+                    <th><buuton onclick="clean()" class="btn btn-dark btn-custom">C</buuton></th>
+                    <th><buuton onclick="voltar()" class="btn btn-dark btn-custom"><</buuton></th>
+                    <th><buuton onclick="numero('/')" class="btn btn-dark btn-custom">/</buuton></th>
+                    <th><buuton onclick="numero('*')" class="btn btn-dark btn-custom">*</buuton></th>
+                </tr>
 
-            <div class="row">
-                <buuton onclick="numero(7)" class="col btn btn-dark btn-custom">7</buuton>
-                <buuton onclick="numero(8)" class="col btn btn-dark btn-custom">8</buuton>
-                <buuton onclick="numero(9)" class="col btn btn-dark btn-custom">9</buuton>
-                <buuton onclick="numero('+')" class="col btn btn-dark btn-custom">+</buuton>
-            </div>
+                <tr>
+                    <th><buuton onclick="numero(7)" class="btn btn-dark btn-custom">7</buuton></th>
+                    <th><buuton onclick="numero(8)" class="btn btn-dark btn-custom">8</buuton></th>
+                    <th><buuton onclick="numero(9)" class="btn btn-dark btn-custom">9</buuton></th>
+                    <th><buuton onclick="numero('+')" class="btn btn-dark btn-custom">+</buuton></th>
+                </tr>
 
-            <div class="row">
-                <buuton onclick="numero(4)" class="col btn btn-dark btn-custom">4</buuton>
-                <buuton onclick="numero(5)" class="col btn btn-dark btn-custom">5</buuton>
-                <buuton onclick="numero(6)" class="col btn btn-dark btn-custom">6</buuton>
-                <buuton onclick="numero('-')" class="col btn btn-dark btn-custom">-</buuton>
-            </div>
-            
-            <div class="row">
-                <buuton onclick="numero(1)" class="col btn btn-dark btn-custom">1</buuton>
-                <buuton onclick="numero(2)" class="col btn btn-dark btn-custom">2</buuton>
-                <buuton onclick="numero(3)" class="col btn btn-dark btn-custom">3</buuton>
-                <buuton onclick="calcular()" class="col btn btn-dark btn-custom" style="height: 110px;">=</buuton>
-            </div>
-            
-            <div class="row" style="margin-top: -60px;">
-                <buuton onclick="numero(0)" class="col-6 btn btn-dark btn-custom">0</buuton>
-                <buuton onclick="numero('.')" class="col-2 btn btn-dark btn-custom">.</buuton>
-            </div>
+                <tr>
+                    <th><buuton onclick="numero(4)" class="btn btn-dark btn-custom">4</buuton></th>
+                    <th><buuton onclick="numero(5)" class="btn btn-dark btn-custom">5</buuton></th>
+                    <th><buuton onclick="numero(6)" class="btn btn-dark btn-custom">6</buuton></th>
+                    <th><buuton onclick="numero('-')" class="btn btn-dark btn-custom">-</buuton></th>
+                </tr>
+
+                <tr>
+                    <th><buuton onclick="numero(1)" class="btn btn-dark btn-custom">1</buuton></th>
+                    <th><buuton onclick="numero(2)" class="btn btn-dark btn-custom">2</buuton></th>
+                    <th><buuton onclick="numero(3)" class="btn btn-dark btn-custom">3</buuton></th>
+                    <th rowspan="2"><buuton onclick="calcular()" class="btn btn-dark btn-custom">=</buuton></th>
+                </tr>
+
+                <tr>
+                    <th colspan="2"><buuton onclick="numero(0)" class="btn btn-dark btn-custom">0</buuton></th>
+                    <th><buuton onclick="numero('.')" class="btn btn-dark btn-custom">.</buuton></th>
+                </tr>
+            </table>
             
 
         </div>
