@@ -33,18 +33,37 @@
             height: 50px;
             border: 1px solid rgb(37, 37, 37);
             border-radius: 7px;
+            color: black;
         }
 
         .btn-custom{
             height: 100%;
             width: 100%;
             border-radius: 0px;
+            background: rgb(122, 122, 122);
+            color: rgb(24, 23, 23);
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 
             font-size: 1.4em;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
+        .btn-custom:hover{
+            background: rgb(82, 81, 81);
+        }
+
+        #teste {
+            background: rgb(61, 61, 61); 
+            color: white;
+        }
+
+        #teste:hover{
+            background: rgb(39, 39, 39)
+        }
+
         th{
             padding: 3px;
             height: 70px;
@@ -64,36 +83,36 @@
 
             <table class="d-flex justify-content-center">
                 <tr>
-                    <th><buuton onclick="clean()" class="btn btn-dark btn-custom">C</buuton></th>
-                    <th><buuton onclick="voltar()" class="btn btn-dark btn-custom"><</buuton></th>
-                    <th><buuton onclick="numero('/')" class="btn btn-dark btn-custom">/</buuton></th>
-                    <th><buuton onclick="numero('*')" class="btn btn-dark btn-custom">*</buuton></th>
+                    <th><buuton onclick="clean()" class="btn btn-custom" id="teste">C</buuton></th>
+                    <th><buuton onclick="voltar()" class="btn btn-custom" id="teste"><</buuton></th>
+                    <th><buuton onclick="numero('/')" class="btn btn-custom" id="teste">/</buuton></th>
+                    <th><buuton onclick="numero('*')" class="btn btn-custom" id="teste">*</buuton></th>
                 </tr>
 
                 <tr>
-                    <th><buuton onclick="numero(7)" class="btn btn-dark btn-custom">7</buuton></th>
-                    <th><buuton onclick="numero(8)" class="btn btn-dark btn-custom">8</buuton></th>
-                    <th><buuton onclick="numero(9)" class="btn btn-dark btn-custom">9</buuton></th>
-                    <th><buuton onclick="numero('+')" class="btn btn-dark btn-custom">+</buuton></th>
+                    <th><buuton onclick="numero(7)" class="btn btn-custom">7</buuton></th>
+                    <th><buuton onclick="numero(8)" class="btn btn-custom">8</buuton></th>
+                    <th><buuton onclick="numero(9)" class="btn btn-custom">9</buuton></th>
+                    <th><buuton onclick="numero('+')" class="btn btn-custom" id="teste">+</buuton></th>
                 </tr>
 
                 <tr>
-                    <th><buuton onclick="numero(4)" class="btn btn-dark btn-custom">4</buuton></th>
-                    <th><buuton onclick="numero(5)" class="btn btn-dark btn-custom">5</buuton></th>
-                    <th><buuton onclick="numero(6)" class="btn btn-dark btn-custom">6</buuton></th>
-                    <th><buuton onclick="numero('-')" class="btn btn-dark btn-custom">-</buuton></th>
+                    <th><buuton onclick="numero(4)" class="btn btn-custom">4</buuton></th>
+                    <th><buuton onclick="numero(5)" class="btn btn-custom">5</buuton></th>
+                    <th><buuton onclick="numero(6)" class="btn btn-custom">6</buuton></th>
+                    <th><buuton onclick="numero('-')" class="btn btn-custom" id="teste">-</buuton></th>
                 </tr>
 
                 <tr>
-                    <th><buuton onclick="numero(1)" class="btn btn-dark btn-custom">1</buuton></th>
-                    <th><buuton onclick="numero(2)" class="btn btn-dark btn-custom">2</buuton></th>
-                    <th><buuton onclick="numero(3)" class="btn btn-dark btn-custom">3</buuton></th>
-                    <th rowspan="2"><buuton onclick="calcular()" class="btn btn-dark btn-custom">=</buuton></th>
+                    <th><buuton onclick="numero(1)" class="btn btn-custom">1</buuton></th>
+                    <th><buuton onclick="numero(2)" class="btn btn-custom">2</buuton></th>
+                    <th><buuton onclick="numero(3)" class="btn btn-custom">3</buuton></th>
+                    <th rowspan="2"><buuton onclick="calcular()" class="btn btn-custom" id="teste">=</buuton></th>
                 </tr>
 
                 <tr>
-                    <th colspan="2"><buuton onclick="numero(0)" class="btn btn-dark btn-custom">0</buuton></th>
-                    <th><buuton onclick="numero('.')" class="btn btn-dark btn-custom">.</buuton></th>
+                    <th colspan="2"><buuton onclick="numero(0)" class="btn btn-custom">0</buuton></th>
+                    <th><buuton onclick="numero('.')" class="btn btn-custom">.</buuton></th>
                 </tr>
             </table>
             
